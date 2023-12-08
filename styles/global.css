@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary-color: #4299e1; /* Tailwind color: bg-blue-500 */
+  --accent-color: #48bb78; /* A greenish color for accent */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Styling for the hero section */
+.hero-section {
+  background-color: #649CBB;
+  color: #fff;
+  padding: 8rem;
+}
+
+/* Styling for the hero content */
+.hero-content {
+  text-align: center;
+}
+
+/* Styling for the hero title */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff; /* Text color for hero title */
+}
+
+/* Styling for the hero subtitle */
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #f8fafc; /* Text color for hero subtitle */
+}
+
+/* Styling for the button */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Primary button styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 9999px;
+}
+
+/* Styling for the navigation bar */
+nav {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #fff; /* Text color for navigation links */
+}
+
+nav a:hover {
+  color: #f8fafc; /* Hover color for navigation links */
+}
+
+/* Styling for the logo in the navigation bar */
+.logo {
+  width: 118px; /* Adjust the width as needed */
+  height: 18px; /* Adjust the height as needed */
+}
+
+/* Styling for the sign-in button in the navigation bar */
+.sign-in-btn {
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+}
+
+.sign-in-btn:hover {
+  background-color: #f0f4f8; /* Hover color for the sign-in button */
+  color: var(--primary-color);
+}
+
+/* Responsive styling for the navigation bar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 1rem; /* Adjust margin as needed */
+  }
+
+  .sign-in-btn {
+    margin-top: 1rem; /* Adjust margin as needed */
+  }
+}
+
