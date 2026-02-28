@@ -1,6 +1,5 @@
 # 🌍 GeoDiscover
 
-[![CI](https://github.com/paulmwangi/geodiscover/actions/workflows/ci.yml/badge.svg)](https://github.com/paulmwangi/geodiscover/actions/workflows/ci.yml)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
