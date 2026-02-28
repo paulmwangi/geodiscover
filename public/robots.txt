@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://geodiscover.vercel.app/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /api/
